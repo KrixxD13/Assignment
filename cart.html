@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Cart</title>
+  <link rel="icon" href="Images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Styles for the shopping cart page */
+
+    *{
+         font-family: monospace;
+    }
+    
+    /* Header Styles */
+     header {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: black;
+         color: whitesmoke;
+         padding: 20px;
+         text-align: center;
+         margin: 0;
+      }
+
+      .header{
+        background-color: black;
+      }
+
+      .logo {
+         display: flex;
+         align-items: center;
+         margin-right: 10px;
+      }
+
+     .logo img {
+         height: 50px;
+         width: auto;
+      }
+      ul li {
+         list-style-type: none;
+         display: inline-block;
+         color: white;
+         width: 90px;
+         height: 30px;
+         text-align: center;
+         padding-top: 20px;
+         margin-left: 40px;
+      }
+
+      .navibar {
+         background-color: black;
+         text-align: center;
+         margin-bottom: 0; 
+         margin-top: 0;
+         padding-top: 0;
+      }
+
+      .navibar a {
+         text-decoration: none;
+         color: white;
+      }
+
+      .navibar a:hover {
+         font-size: large;
+      }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+   .container {
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 20px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .total {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      display: block;
+      width: 99%;
+      padding: 10px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+
+    }
+
+   .checkout-btn a:hover{
+         font-size: large;
+      }
+
+    .item-photo {
+      width: 80px;
+      height: 80px;
+    }
+
+     /* Footer Styles */
+    footer {
+         background-color: black;
+         color: whitesmoke;
+         padding: 20px;
+         text-align: center;
+      }
+
+      .social-icons a {
+         color: #fff;
+         font-size: 24px;
+         margin-right: 10px;
+    }
+
+    .social-icons a:hover {
+         color: #ccc;
+    }
+
+  </style>
+</head>
+<body>
+     <header class="header">
+      <div class="logo">
+         <img src="Images/logo.png" alt="Logo">
+         <h1>Gadget Heaven</h1>
+      </div> 
+   </header>
+       <div class="navibar">
+      <ul>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\Home Page.html">Home</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\Product List.html">Product</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\cart.html">Cart</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\about us.html">About Us</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\contactus.html">Contact Us</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\login.html">Login</a></li> <!-- Added Login option -->
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\sign up.html">Sign Up</a></li> <!-- Added Sign Up option -->
+      </ul>
+   </div>
+
+    <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Photo</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+          <td><img src="Images/ROCCAT.jpg" alt="Product 1" class="item-photo"></td>
+          <td>$10.00</td>
+          <td>2</td>
+          <td>$20.00</td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td><img src="Images/HyperX Cloud Flight.jpg" alt="Product 2" class="item-photo"></td>
+          <td>$15.00</td>
+          <td>1</td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td>Product 3</td>
+          <td><img src="Images/Iphone12.jpg" alt="Product 3" class="item-photo"></td>
+          <td>$20.00</td>
+          <td>3</td>
+          <td>$60.00</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="total">Total</td>
+          <td>$95.00</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <div class="checkout-btn">
+    <a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\login.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+  </div>
+
+  <footer>
+      <p>&copy; 2023 Online Shop. All rights reserved.</p>
+      <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+   </footer>
+
+</body>
+</html>

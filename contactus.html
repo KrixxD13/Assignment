@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="icon" href="Images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style type="text/css">
+    /* Styles for the Contact Us page */
+
+       *{
+         font-family: monospace;
+    }
+
+
+    header {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: black;
+         color: whitesmoke;
+         padding: 20px;
+         text-align: center;
+         margin: 0;
+      }
+
+      .header{
+        background-color: black;
+      }
+
+      .logo {
+         display: flex;
+         align-items: center;
+         margin-right: 10px;
+      }
+
+     .logo img {
+         height: 50px;
+         width: auto;
+      }
+      ul li {
+         list-style-type: none;
+         display: inline-block;
+         color: white;
+         width: 90px;
+         height: 30px;
+         text-align: center;
+         padding-top: 20px;
+         margin-left: 40px;
+      }
+
+      .navibar {
+         background-color: black;
+         text-align: center;
+         margin-bottom: 0; 
+         margin-top: 0;
+         padding-top: 0;
+      }
+
+      .navibar a {
+         text-decoration: none;
+         color: white;
+      }
+
+      .navibar a:hover {
+         font-size: large;
+      }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+     .map-container {
+      position: relative;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+
+    .map {
+      width: 100%;
+      height: 100%;
+    }
+
+      /* Footer Styles */
+    footer {
+         background-color: black;
+         color: whitesmoke;
+         padding: 20px;
+         text-align: center;
+      }
+
+     .social-icons a {
+         color: #fff;
+         font-size: 24px;
+         margin-right: 10px;
+    }
+
+    .social-icons a:hover {
+         color: #ccc;
+    }
+
+  </style>
+</head>
+<body> 
+  <header class="header">
+      <div class="logo">
+         <img src="Images/logo.png" alt="Logo">
+         <h1>Gadget Heaven</h1>
+      </div> 
+  </header>
+
+  <div class="navibar">
+      <ul>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\Home Page.html">Home</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\Product List.html">Product</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\cart.html">Cart</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\about us.html">About Us</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\contactus.html">Contact Us</a></li>
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\login.html">Login</a></li> <!-- Added Login option -->
+         <li><a href="D:\Gusto\HND-54 second sem\Web Design\Assingment WebSite\sign up.html">Sign Up</a></li> <!-- Added Sign Up option -->
+      </ul>
+   </div>
+
+    <div class="container">
+    <h2>Get in Touch</h2>
+    <p>Have a question or need assistance? Fill out the form below and we'll get back to you as soon as possible.</p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  <h2>Location</h2>
+  <div class="map-container">
+     
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.2012655490116!2d96.12605877473408!3d16.816368583976693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eb34335a92f5%3A0xea3210d0410309d7!2sTimes%20City%20Yangon!5e0!3m2!1sen!2smm!4v1719051972604!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    <p>Times City Yangon</p>
+    <p>No.37/Quarter, Between Hantharwaddy, and Kyun Taw Rd, Yangon 11041</p>
+  </div>
+  
+
+   <footer>
+      <p>&copy; 2023 Online Shop. All rights reserved.</p>
+      <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+   </footer>
+</body>
+</html>
